@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Personal Finance Desktop</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1f2328; background: #fff; max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    .muted { color: #59636e; }
+    code { background: #f3f4f6; padding: 0 4px; border-radius: 4px; }
+    a { color: #0969da; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Personal Finance Desktop · Effective date: October 16, 2026</p>
+
+  <h2>1. Overview</h2>
+  <p>Personal Finance Desktop is a Windows desktop application for tracking personal income and expenses.
+    The application runs entirely on your own computer. The developer does not operate any server and does not
+    collect, receive or store any of your data.</p>
+
+  <h2>2. Google user data the app accesses</h2>
+  <p>If you choose to connect Gmail, the app asks for read-only access to your Gmail
+    (<code>https://www.googleapis.com/auth/gmail.readonly</code>). It uses this access only to:</p>
+  <ul>
+    <li>search your mailbox for transaction notification emails sent by supported banks (Vietcombank, MB Bank, BIDV),
+      limited to those banks' sender domains;</li>
+    <li>read those emails on your computer to extract the transaction amount, date and time, bank reference number
+      and transfer description, and create the matching transaction records in the app.</li>
+  </ul>
+  <p>The app never sends, modifies or deletes emails. Connecting Gmail is optional: the app works fully without it.</p>
+
+  <h2>3. How your data is stored</h2>
+  <ul>
+    <li>All data stays on your computer, in the app's local database inside your Windows user profile.</li>
+    <li>The app stores the transactions it extracts. For each processed email it stores only the Gmail message ID,
+      the bank, the processing result and the time, so that the same email is never imported twice.
+      The content of your emails is not stored.</li>
+    <li>Your Google sign-in (refresh) token is encrypted with Windows Data Protection (DPAPI) and stored only on your
+      computer. Access tokens are used for a single sync and are not stored. Tokens and email content are never written
+      to log files.</li>
+  </ul>
+
+  <h2>4. Sharing of data</h2>
+  <p>The app does not sell, share or transfer your Google user data to the developer or to anyone else, with one
+    exception that you control:</p>
+  <ul>
+    <li><strong>Optional AI reading (off by default).</strong> If you turn it on and enter your own API key, emails that
+      the built-in reader cannot read with certainty are sent to the AI provider you selected (Groq, Google Gemini, or an
+      OpenAI-compatible service you configure) only to extract the transaction details. Account and card numbers and
+      balances are masked before sending; sender/recipient names and the transfer description are included because they
+      are needed to understand the transaction. One-time passwords (OTP) and promotional emails are never sent. That
+      provider's own privacy policy applies to what it receives. You can turn this feature off at any time in Settings.</li>
+  </ul>
+  <p>The app shows no advertising, contains no analytics or tracking, and the developer does not use your data to train
+    AI models.</p>
+
+  <h2>5. Limited Use</h2>
+  <p>Personal Finance Desktop's use and transfer to any other app of information received from Google APIs will adhere
+    to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+    Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>6. Your choices</h2>
+  <ul>
+    <li><strong>Disconnect Gmail:</strong> in the app, open Settings and click "Ngắt kết nối" (Disconnect). The app
+      revokes its access at Google and deletes the stored token from your computer.</li>
+    <li>You can also remove the app's access at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Delete your data:</strong> uninstall the app and delete the folder
+      <code>%APPDATA%\personal-finance-desktop</code>.</li>
+  </ul>
+
+  <h2>7. Changes</h2>
+  <p>If this policy changes, the updated version will be published on this page with a new effective date.</p>
+
+  <h2>8. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:son9xhy12345@gmail.com">CONTACT_EMAIL</a></p>
+
+  <p class="muted"><a href="index.html">← Personal Finance Desktop</a></p>
+</body>
+</html>
